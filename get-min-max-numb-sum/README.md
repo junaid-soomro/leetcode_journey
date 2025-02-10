@@ -5,17 +5,22 @@ The solve(n, array, k) function processes an input array by removing certain ele
 1. Cloning the Array
    The function begins by creating two copies of the input array:
 
-maxArr: This copy is used for removing the largest elements.
-minArr: This copy is used for removing the smallest elements. 2. Removing Elements
+- maxArr: This copy is used for removing the largest elements.
+- minArr: This copy is used for removing the smallest elements.
+
+2. Removing Elements
+
 A loop runs k times, and during each iteration:
 
 Find and Remove the Maximum:
 
-The function uses the findMax helper to locate the largest element in maxArr.
-Once found, that element is removed from maxArr.
+The function uses the `findMax` helper to locate the largest element in maxArr.
+Once found, that element is removed from `maxArr`.
+
 Find and Remove the Minimum:
 
-Similarly, the findMin helper is used to locate the smallest element in minArr.
+Similarly, the `findMin` helper is used to locate the smallest element in `minArr`.
+
 The identified element is then removed from minArr. 3. Summing the Remaining Values
 After the loop completes:
 
